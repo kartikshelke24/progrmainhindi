@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} ProgramInHindi-Kartik Shelke the web developer{% endblock %}
+{% block style %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}" !important>
+<link rel="stylesheet" href="{% static 'css/navbar.css' %}" !important>
+<link rel="stylesheet" href="{% static 'css/videos.css' %}" !important>
+<link rel="stylesheet" href="{% static 'css/footer.css' %}" !important>
+{% endblock %}
+
+{% block videoActive %}active{% endblock videoActive %}
+
+
+
+{% block topHeaderDiv %}<div class="header" id="topHeader">{% endblock topHeaderDiv %}
+
+
+{% block content %}
+</div>
+<div class="container-fluid tab-content course-conteiner" id="course-pills-tabContent">
+    <!-- Content START -->
+        <div class="row g-4">
+            {% for course in allCourse  %}
+             <!-- Card item START -->
+             <div class="col-sm-6 col-lg-4 col-xl-3 my-3">
+                <div class="card shadow h-100">
+                    <!-- Image -->
+                    {% comment %} /static/img/videosLogo/c_language_pracice.jpg {% endcomment %}
+                    <img src="/{{course.image}}" class="card-img-top" alt="course image">
+                    <div class="card-body pb-0">
+                        <!-- Badge and favorite -->
+                        <div class="d-flex justify-content-between mb-2">
+                            <a href="" class="badge bg-purple bg-opacity-10 text-purple">All level</a>
+                            <a href="" class="text-danger"><i class="fas fa-heart"></i></a>
+                        </div>
+                        <!-- Title -->
+                        <h5 class="card-title fw-normal"><a href="{{course.slug}}">{{course.title}}</a></h5>
+                        <p class="mb-2 para">{{course.desc}}</p>
+                    </div>
+                    <!-- Card footer -->
+                    <div class="card-footer pt-0 pb-3">
+                        <hr>
+                        <div class="d-flex justify-content-between mt-2">
+                            <span class="h6 fw-light mb-0"><i class="far fa-clock text-danger me-2"></i>6h 56m</span>
+                            <span class="h6 fw-light mb-0"><i class="fas fa-table text-orange me-2"></i>{{allCourse.count}} lectures</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card item END -->
+            {% endfor %}
+
+        </div> <!-- Row END -->
+
+    <!-- Content END -->
+
+
+</div>
+
+{% endblock %}

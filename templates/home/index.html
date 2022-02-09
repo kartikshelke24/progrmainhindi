@@ -1,0 +1,172 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}programInHindi-Kartik Shelke the web developer{% endblock %}
+{% block style %}
+
+<link rel="stylesheet" href="{% static 'css/style.css' %}" !important>
+<link rel="stylesheet" href="{% static 'css/navbar.css' %}" !important>
+<link rel="stylesheet" href="{% static 'css/home.css' %}" !important>
+<link rel="stylesheet" href="{% static 'css/footer.css' %}" !important>
+
+{% endblock %}
+
+{% block topHeaderDiv %}<div class="header" id="topHeader">{% endblock %}
+    {% block homeHeaderSection %}
+    <section class="header-section">
+        <div class="center-div">
+            <h1 class="font-weight-bold">I am the Web Developer</h1>
+            <p> I am a reputed Website Designinger & Programmer . <br> delivering the top-class services.</p>
+            <div class="header-buttons">
+                <a href="/#footer">About Us</a>
+                <a href="/#service">Service</a>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}
+{% block homeActive %}active{% endblock homeActive %}
+
+
+{% block content %}
+<!-- ********************** Three extra  Header div start   *********************** -->
+<section class="header-extradiv">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-12 extra-div">
+                <a href="#"><i class="fas fa-desktop fa-3x icon"></i></a>
+                <h2 class="heading2">Brouse all Videos </h2>
+                <p class="para">Get started your programming career with these free video courses. For your better
+                    experience Source code is available with all the videos. </p>
+                <a class="links" href="/courses">Browse Videos</a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12 extra-div">
+                <a href="#"><i class="fas fa-trophy fa-3x icon"></i></a>
+                <h2 class="heading2">Coding Blog </h2>
+                <p class="para">Some latest information and programming news compiled as coding articles. Keep your
+                    programming knowledge up to date with our coding Blogs.</p>
+                <a class="links" href="/blog">Read articals</a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12 extra-div">
+                <a href="#"><i class="fas fa-magic fa-3x icon"></i></a>
+                <h2 class="heading2">Contact Me</h2>
+                <p class="para">You can contact me for any doubt and I will get back to you! Learn programming from
+                    our free courses. Examples are available with these tutorials. </p>
+                <a class="links" href="/contact">Contact me</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- ********************* Three extra  Header div End *********************** -->
+
+<!-- ********************* offer section  start *********************** -->
+
+<section class="serviceOffers" id="service">
+    <div class="container headings text-center">
+        <h1 class="text-center font-weight-bold">What do we offer</h1>
+        <p class="para text-center">“I’m not a great programmer; I’m just a good programmer with great habits.”</p>
+
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-12 ">
+                <div class="row">
+                    <div class="col-lg-2 col-2 service-icons">
+                        <i class="fab fa-python fa-3x icon"></i>
+                    </div>
+                    <div class="col-lg-10 col-10">
+                        <h2 class="heading2">Python Programming</h2>
+                        <p class="para">Python is an interpreted, high-level and general-purpose programming
+                            language. It supports multiple programming paradigms, including structured ,
+                            object-oriented, and functional programming.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2 col-2 service-icons">
+                        <i class="fas fa-desktop fa-3x icon"></i>
+                    </div>
+                    <div class="col-lg-10 col-10">
+                        <h2 class="heading2">C Language</h2>
+                        <p class="para">C is an imperative procedural language. It was designed to be compiled to
+                            provide low-level access to memory and language constructs that map efficiently to
+                            machine instructions, all with minimal runtime support. </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2 col-2 service-icons">
+                        <i class="fa fa-database fa-3x icon"></i>
+                    </div>
+                    <div class="col-lg-10 col-10">
+                        <h2 class="heading2">Database</h2>
+                        <p class="para">A database is an organized collection of data, generally stored and accessed
+                            electronically from a computer system.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-mid-12 col-12 serviceDiv">
+                <div class="row">
+                    <div class="col-lg-2 col-2 service-icons">
+                        <i class="fa fa-code fa-3x icon"></i>
+                    </div>
+                    <div class="col-lg-10 col-10">
+                        <h2 class="heading2">Website Devlopement</h2>
+                        <p class="para">Web development is the work involved in developing a Web site for the
+                            Internet (World Wide Web). </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2 col-2 service-icons">
+                        <i class="fab fa-python fa-3x icon"></i>
+                    </div>
+                    <div class="col-lg-10 col-10">
+                        <h2 class="heading2">Python web development</h2>
+                        <p class="para"> Python can be used to build server-side web applications. While a web
+                            framework is not required to build web apps, it's rare that developers would not use
+                            existing open source libraries to speed up their progress in getting their application
+                            working.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2 col-2 service-icons">
+                        <i class="fas fa-phone fa-3x icon"></i>
+                    </div>
+                    <div class="col-lg-10 col-10">
+                        <h2 class="heading2">Support</h2>
+                        <p class="para">You can contact me for any doubt and I will get back to you! Learn
+                            programming from our free courses and tutorials. Examples and Source Code are available
+                            with these tutorials. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ********************* offer section  End *********************** -->
+
+
+<!-- *******************************NewsLetters start ********************** -->
+<!-- <section class="NewsLetters" id="NewsLetters">
+        <div class="container headings text-center">
+            <h1 class="text-center font-weight-bold">Subcribe to our NewsLetters</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2 col-12">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control news-input" placeholder="Enter Your Email"
+                                aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <span class="input-group-text" id="basic-addon2">Subcribe</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+<!-- *******************************NewsLetters end ********************** -->
+{% endblock %}

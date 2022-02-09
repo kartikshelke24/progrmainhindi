@@ -1,0 +1,53 @@
+ /* *******************************  footer start **********************  */
+ .footerSection{
+    width: 100%;
+    height: auto;
+    padding: 70px 0px 20px 0px;
+    background: #ff5e00;
+    position: relative;
+}
+.footerSection p{
+    color: #fff;
+}
+
+.footerSection li a{
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #fff;
+    text-transform: capitalize;
+}
+.footerSection li{
+   list-style: none;
+}
+
+.footerSection h3{
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.4);
+}
+.footerSection h3 span{
+  text-transform: none;
+  color: #00fa9a;
+
+}
+
+#myBtn{
+    display: none;
+    position: fixed;
+    bottom: 25px;
+    right: 40px;
+    z-index: 99;
+    border: none;
+    color: #fff;
+    background: #00abff;
+    padding: 10px;
+    border-radius: 10px;
+}
+#myBtn:hover{
+    background: #606060;
+}
+/* *******************************  footer end **********************  */

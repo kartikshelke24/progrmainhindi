@@ -1,0 +1,42 @@
+     /* *************************   Navnar css strat    ***************************************** */
+
+     .navbar::before{
+        content: "";
+        position: absolute;
+        border-bottom: 1px solid black;
+        top: 0%;
+        bottom: 0%;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        /* background: linear-gradient(to right, red 0%, #3ccdbb 0%, red 100%); */
+        background: #ffffff;
+    }
+    
+    
+    .nav-item a{
+        color: #ff5e00;
+        /* color: rgb(0, 0, 0); */
+        font-weight: bold;
+        width: max-content;
+        margin: auto;
+        font-family:  "Poppins", sans-serif !important;
+    }
+    .user_name_show{
+        font-family: "Poppins", sans-serif !important;
+    }
+     /* *************************   Navnar css end    ***************************************** */
+
+    .active{
+        border-bottom: 5px solid #ff5e00;
+        color: #4c14a3 !important;
+        }
+        
+        /* .toplist ul li a:hover:not(.active) {
+        background-color: #555;
+        color: white;
+        }
+         */
+        #navbarSupportedContent ul li a:hover {
+            border-bottom: 5px solid #4c14a3;
+        }

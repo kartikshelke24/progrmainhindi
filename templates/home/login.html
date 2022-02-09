@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Login | ProgramInHindi{% endblock %}
+{% block style %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}" !important>
+<link rel="stylesheet" href="{% static 'css/navbar.css' %}" !important>
+<link rel="stylesheet" href="{% static 'css/login.css' %}" !important>
+<link rel="stylesheet" href="{% static 'css/footer.css' %}" !important>
+{% endblock %}
+{% block loginActive %}active{% endblock loginActive %}
+
+
+{% block content %}
+<div class="main-container">
+    <!-- Sing in  Form -->
+    <section class="sign-in">
+        <div class="container">
+            <div class="signin-content d-flex">
+                <div class="signin-image mx-3">
+                    <figure><img src="{% static 'img/home/signin-image.jpg' %}" alt="sing up image"></figure>
+                    
+                </div>
+
+                <div class="signin-form mx-3">
+                    <h2 class="form-title my-3">Welcome back!</h2>
+                    <form action="/login/" method="POST" class="register-form" id="login-form" autocomplete="off">
+                        {% csrf_token %}
+                        <small id="emailHelp" class="form-text text-danger">{{  email}}</small>
+                        <div class="form-group d-flex">
+                            <label for="your_email"><i class="fa fa-envelope"></i></label>
+                            <input type="text" value="{{emailVal}}" name="your_email" id="your_email" placeholder="Your Email"autocomplete="off"/>
+                        </div>
+                        <small id="emailHelp" class="form-text text-danger">{{  password}}</small>
+                        <div class="form-group d-flex">
+                            <label for="your_pass"><i class="fas fa-lock"></i></label>
+                            <input type="password" value="{{passwordVal}}" name="your_pass" id="your_pass" placeholder="Password"autocomplete="off"/>
+                        </div>
+                        <div class="form-button">
+                            <input type="submit" name="signin" id="signin" class="form-submit" value="Log in"/>
+                        </div>
+                    </form>
+                    <a href="/signup/" class="signup-image-link float-right mt-3">Create an account</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}
+
+{% block jsBlock %}
+<script>
+    let loginform = document.getElementById('login-form')
+    loginform.addEventListener('keyup', ()=> {
+        let your_pass = document.getElementById('your_pass').value.trim()
+        let your_name = document.getElementById('your_name').value.trim()
+        let signin = document.getElementById('signin')
+        if (your_name=="" || your_pass=="") {
+            console.log("value = none");
+            signin.setAttribute("disabled", true);
+            signin.style.opacity= '0.5';
+        } else {
+            console.log("value is something");
+            signin.removeAttribute("disabled", false);
+            signin.style.opacity= '1';
+        }
+    });
+   
+    
+
+
+
+</script>
+{% endblock jsBlock %}

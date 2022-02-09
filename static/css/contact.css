@@ -1,0 +1,44 @@
+/* *******************************Contact form start **********************  */
+    
+.contact{
+    width: 100%;
+    height: 100vh;
+    padding: 80px 0px;
+    position: relative;
+}
+.contact::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background: linear-gradient(330deg,  #00ffc770 55%, rgba(255, 255, 255, 0.904) 0%);
+}
+
+.form-button button{
+    display: none;
+    border: 1px solid #50d1c0;
+    border-radius: 100px;
+    outline: none;
+    margin: 0 5px;
+    padding: 12px 35px;
+    color: #50d1c0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+    background: transparent;
+    background: #fff;
+    box-shadow:0 0 20px 0 rgba(0,0,0,0.3);
+    
+}
+form:hover .form-button button{
+    display: block;
+}
+
+::placeholder{
+    font-size: 0.8rem;
+}
+  /* *******************************Contact form end **********************  */
